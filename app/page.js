@@ -12,9 +12,12 @@ export default function Home() {
 			<Head>
 				<title>Randash Painting</title>
 			</Head>
-			<Hero heading="Painting & Staining" message="Fargo ND & Surrounding Area" />
+			<Navbar />
+			<Hero
+				heading="Painting & Staining"
+				message="Fargo ND & Surrounding Area"
+			/>
 			<Slider slides={SliderData} />
-			<Service/>
 		</div>
 	)
 }
