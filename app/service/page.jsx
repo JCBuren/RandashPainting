@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar"
 import Residential from "../components/Residential"
 import Commercial from "../components/Commercial"
 import Link from "next/link"
+import { FaCircleDot } from "react-icons/fa6"
 
 export default function Service() {
 	return (
@@ -19,9 +20,74 @@ export default function Service() {
 				</div>
 			</div>
 			<Navbar />
-			<div>Hello World</div>
+			<div class="grid grid-rows-1 grid-cols-2 gap-4 justify-center align-middle w-4/5 p-8 m-auto">
+				<div class="font-bold text-2xl border-2 border-black rounded-xl p-8">
+					Interior Services:
+				</div>
+				<div class="border-2 border-black rounded-xl p-8 grid grid-cols-2">
+					<div class="font-bold text-2xl">Interior Painting:</div>
+					<ul>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Walls and Ceilings
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Custom Wood Projects
+						</li>
+					</ul>
+					<div class="font-bold text-2xl">Interior Wood Work:</div>
+					<ul>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Trim & Baseboards
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Ceiling Wood
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Doors
+						</li>
+					</ul>
+				</div>
+			</div>
 			<Residential />
-			<div>Hello World Again</div>
+			<div class="grid grid-rows-1 grid-cols-2 gap-4 justify-center align-middle w-4/5 p-8 m-auto">
+				<div class="font-bold text-2xl border-2 border-black rounded-xl p-8">
+					Exterior Services:
+				</div>
+				<div class="border-2 border-black rounded-xl p-8">
+					<div class="font-bold text-2xl">Exterior Painting:</div>
+					<ul>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Stained siding
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Steel siding
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Gutter painting
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Deck / fence staining
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Lake homes
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Pergolas / Columns{" "}
+						</li>
+					</ul>
+				</div>
+			</div>
 			<Commercial />
 		</div>
 	)

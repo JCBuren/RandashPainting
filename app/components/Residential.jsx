@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Residential = () => {
 	return (
-		<div className="max-w-[1240px] mx-auto py-16 text-center">
+		<div className="max-w-[1240px] mx-auto py-4 text-center">
 			<h1 className="font-bold text-3xl p-4">Recent Residential Projects</h1>
 			<div className="grid grid-rows-none md:grid-cols-5 p-4 gap-4">
 				<div className="w-full h-full col-span-2 md:col-span-3 row-span-2">
@@ -61,4 +61,3 @@ const Residential = () => {
 }
 
 export default Residential
-

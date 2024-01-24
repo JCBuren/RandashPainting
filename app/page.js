@@ -10,12 +10,13 @@ export default function Home() {
 	return (
 		<div>
 			<Head>
-				<title>Randash Painting</title>
+				<title>Randash Painting LLC</title>
 			</Head>
 			<Navbar />
 			<Hero
-				heading="Painting & Staining"
-				message="Fargo ND & Surrounding Area"
+				heading="Randash Painting LLC"
+				message="Performing quality painting services throughout the Fargo/ Moorhead and surrounding area for over 70 years.  
+				"
 			/>
 			<Slider slides={SliderData} />
 		</div>
