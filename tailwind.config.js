@@ -7,6 +7,19 @@ module.exports = {
 	],
 	theme: {
 		extend: {},
+		// 	backgroundImage: {
+		// 		"custom-img1": "url('/app/assets/Main1.jpg')",
+		// 	},
+
+		// 	backgroundImage: {
+		// 		"custom-img2": "url('/app/assets/Main1.jpg')",
+		// 	},
+
+		// 	backgroundImage: {
+		// 		"custom-img3": "url('/app/assets/Main1.jpg')",
+		// 	},
+		// },
+
+		plugins: [],
 	},
-	plugins: [],
 }

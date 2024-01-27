@@ -14,6 +14,20 @@ module.exports = {
 				protocol: "https",
 				hostname: "images.unsplash.com",
 			},
+			{
+				protocol: "https",
+				hostname: "photos.google.com",
+			},
+			{
+				protocol: "https",
+				hostname: "lh3.google.com",
+			},
+			{
+				protocol: "https",
+				hostname: "photos.app.goo.gl",
+			},
+			
+			
 		],
 	},
 }
