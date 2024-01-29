@@ -9,7 +9,7 @@ import { FaCircleDot } from "react-icons/fa6"
 export default function Service() {
 	return (
 		<div>
-			<div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img3">
+			<div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('../app/assets/Fitness.jpg')]">
 				<div className="absolute top-0 left-0 right-0 bottom-0 bg-black/60 z-[2]" />
 				<div className="p-5 text-white z-[2] mt-[-10rem]">
 					<h2 className="text-6xl font-bold">Residential & Commercial</h2>
@@ -21,9 +21,6 @@ export default function Service() {
 			</div>
 			<Navbar />
 			<div class="grid grid-rows-1 grid-cols-2 gap-4 justify-center align-middle w-4/5 p-8 m-auto">
-				<div class="font-bold text-2xl border-2 border-black rounded-xl p-8">
-					Interior Services:
-				</div>
 				<div class="border-2 border-black rounded-xl p-8 grid grid-cols-2">
 					<div class="font-bold text-2xl">Interior Painting:</div>
 					<ul>
@@ -33,10 +30,14 @@ export default function Service() {
 						</li>
 						<li class="text-xl mx-4 py-1 flex">
 							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Drywall Repair
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
 							Custom Wood Projects
 						</li>
 					</ul>
-					<div class="font-bold text-2xl">Interior Wood Work:</div>
+					<div class="font-bold text-2xl ">Interior Wood Work:</div>
 					<ul>
 						<li class="text-xl mx-4 py-1 flex">
 							<FaCircleDot size={10} class="mt-2 mx-2" />
@@ -52,16 +53,42 @@ export default function Service() {
 						</li>
 					</ul>
 				</div>
-			</div>
-			<Residential />
-			<div class="grid grid-rows-1 grid-cols-2 gap-4 justify-center align-middle w-4/5 p-8 m-auto">
-				<div class="font-bold text-2xl border-2 border-black rounded-xl p-8">
-					Exterior Services:
-				</div>
-				<div class="border-2 border-black rounded-xl p-8">
-					<div class="font-bold text-2xl">Exterior Painting:</div>
+				<div class="border-2 border-black rounded-xl p-8 grid grid-cols-2">
+					<div class="font-bold text-2xl">Cabinet Services:</div>
 					<ul>
 						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Sanding and Re-painting
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Cabinet Framing
+						</li>
+					</ul>
+					<div class="font-bold text-2xl">Concrete Painting:</div>
+					<ul>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Concrete Walls
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Concrete Floors
+						</li>
+						<li class="text-xl mx-4 py-1 flex">
+							<FaCircleDot size={10} class="mt-2 mx-2" />
+							Concrete Ceilings
+						</li>
+					</ul>
+				</div>
+			</div>
+			<Residential />
+			<div class="w-4/5 p-8 m-auto justify-items-center">
+				
+				<div class="border-2 border-black rounded-xl p-4">
+					<div class="font-bold text-2xl text-center py-4">Exterior Painting:</div>
+					<ul class="grid grid-cols-3 mx-4 ">
+						<li class="text-xl mx-4 py-1 flex ">
 							<FaCircleDot size={10} class="mt-2 mx-2" />
 							Stained siding
 						</li>
@@ -83,7 +110,7 @@ export default function Service() {
 						</li>
 						<li class="text-xl mx-4 py-1 flex">
 							<FaCircleDot size={10} class="mt-2 mx-2" />
-							Pergolas / Columns{" "}
+							Pergolas / Columns
 						</li>
 					</ul>
 				</div>
