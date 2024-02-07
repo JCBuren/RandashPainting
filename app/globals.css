@@ -8,13 +8,13 @@ html {
 }
 
 .custom-img1 {
-	background-image: "url('../app/assets/Main1.jpg')" 
+	background-image: "url('../app/assets/Main1.jpg')";
 }
 
 .custom-img2 {
-	background-image: "url('/app/assets/Paint3.jpg')"
+	background-image: "url('../app/assets/Paint3.jpg')";
 }
 
 .custom-img3 {
-	background-image: "url('/app/assets/Paint4.jpg')"
+	background-image: "url('../app/assets/Paint4.jpg')";
 }

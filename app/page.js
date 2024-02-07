@@ -5,6 +5,7 @@ import Slider from "./components/Slider"
 import { SliderData } from "./components/SliderData"
 import Contact from "./contact/page"
 import Service from "./service/page"
+import Footer from "./components/Footer"
 
 export default function Home() {
 	return (
@@ -19,6 +20,7 @@ export default function Home() {
 				"
 			/>
 			<Slider slides={SliderData} />
+			<Footer/>
 		</div>
 	)
 }
