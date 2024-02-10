@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 module.exports = {
 	content: [
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -6,20 +9,12 @@ module.exports = {
 		"./components/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {},
-		// 	backgroundImage: {
-		// 		"custom-img1": "url('/app/assets/Main1.jpg')",
-		// 	},
+		extend: {
+			fontFamily: {
+				sans: ['"Raleway"', ...defaultTheme.fontFamily.sans],
+			},
 
-		// 	backgroundImage: {
-		// 		"custom-img2": "url('/app/assets/Main1.jpg')",
-		// 	},
-
-		// 	backgroundImage: {
-		// 		"custom-img3": "url('/app/assets/Main1.jpg')",
-		// 	},
-		// },
-
-		plugins: [],
+			plugins: [],
+		},
 	},
 }

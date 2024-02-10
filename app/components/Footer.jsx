@@ -6,6 +6,8 @@ import { FaInstagram } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 import { FaYoutube } from "react-icons/fa"
+import { FaFacebook } from "react-icons/fa"
+import { FcGoogle } from "react-icons/fc"
 
 function Footer() {
 	const slides = [
@@ -51,7 +53,7 @@ function Footer() {
 	}
 	return (
 		<>
-			<div className="bg-gray-200 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
+			<div className="bg-gray-200 h-1/2 w-full flex md:flex-row flex-col justify-around items-start">
 				<div className="p-5 ">
 					<ul>
 						<p className="text-gray-800 font-bold text-3xl pb-6">
@@ -59,13 +61,13 @@ function Footer() {
 						</p>
 						<img
 							src="https://i.imgur.com/4QnLsCx.png"
-							className="w-60 h-60"
+							className="w-40 h-40"
 						/>
 						<div className="flex gap-6 p-8">
 							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
-							<FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
 							<FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
-							<FaYoutube className="text-2xl cursor-pointer hover:text-red-600" />
+							<FcGoogle className="text-2xl cursor-pointer" />
+							<FaFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
 						</div>
 					</ul>
 				</div>
@@ -98,8 +100,11 @@ function Footer() {
 						))}
 					</div>
 				</div>
-
-				<div className="lg:p-8">
+				<div className="bold text-2xl p-10 mt-16">
+					Leave us a Review on Google!
+					<FcGoogle size={80} className="flex" />
+				</div>
+				{/* <div className="lg:p-8">
 					<ul>
 						<p className="text-gray-800 font-bold text-2xl p-4">
 							Shortcuts
@@ -120,7 +125,7 @@ function Footer() {
 							About Us{" "}
 						</li>
 					</ul>
-				</div>
+				</div> */}
 			</div>
 			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
 				<h1 className=" text-gray-800 font-semibold">

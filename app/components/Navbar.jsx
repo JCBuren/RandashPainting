@@ -8,6 +8,7 @@ const Navbar = () => {
 	const [nav, setNav] = useState(false)
 	const [color, setColor] = useState("transparent")
 	const [textColor, setTextColor] = useState("white")
+	const [logoImage, setLogoImage] = useState("https://i.imgur.com/wpOiZuv.png")
 
 	const handleNav = () => {
 		setNav(!nav)
@@ -26,38 +27,47 @@ const Navbar = () => {
 		window.addEventListener("scroll", changeColor)
 	}, [])
 
+	useEffect(() => {
+		const changeLogo = () => {
+			if (window.scrollY >= 90) {
+				setLogoImage("https://i.imgur.com/5KLaQs7.png")
+			} else {
+				setLogoImage("https://i.imgur.com/Vsa5aui.png")
+			}
+		}
+		window.addEventListener("scroll", changeLogo)
+	}, [])
 	return (
 		<div
 			style={{ backgroundColor: `${color}` }}
-			className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
+			className="fixed left-0 top-0 w-full max-h-44 z-10 ease-in duration-300"
 		>
-			<div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
+			<div className="max-w-[1240px] m-auto flex justify-between items-center text-white">
 				<Link href="/">
-					<h1
-						style={{ color: `${textColor}` }}
-						className="font-bold text-4xl"
-					>
-						Randash Painting
-					</h1>
+					
+				<img
+							src= { `${logoImage}`}
+							className="w-52 h-52"
+						/>
 				</Link>
 				<ul style={{ color: `${textColor}` }} className="hidden sm:flex">
 					<li className="p-4">
-						<Link href="/">Home </Link>
+						<Link href="/" className="font-bold text-xl">Home </Link>
 					</li>
 					<li className="p-4">
-						<Link href="/service">Services</Link>
+						<Link href="/service" className="font-bold text-xl">Services</Link>
 					</li>
 					<li className="p-4">
-						<Link href="/contact">Contact Us</Link>
+						<Link href="/contact" className="font-bold text-xl">Contact Us</Link>
 					</li>
 					<li className="p-4">
-						<Link href="/#gallery">Gallery</Link>
+						<Link href="/#gallery" className="font-bold text-xl">Gallery</Link>
 					</li>
 					<li className="p-4">
-						<Link href="/review">Reviews</Link>
+						<Link href="/review" className="font-bold text-xl">Reviews</Link>
 					</li>
 					<li className="p-4">
-						<Link href="/team">Team Members</Link>
+						<Link href="/team" className="font-bold text-xl">About Us</Link>
 					</li>
 				</ul>
 
