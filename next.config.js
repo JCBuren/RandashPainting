@@ -24,10 +24,8 @@ module.exports = {
 			},
 			{
 				protocol: "https",
-				hostname: "photos.app.goo.gl",
+				hostname: "i.imgur.com",
 			},
-			
-			
 		],
 	},
 }

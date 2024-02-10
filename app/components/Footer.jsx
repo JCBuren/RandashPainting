@@ -10,25 +10,25 @@ import { FaYoutube } from "react-icons/fa"
 function Footer() {
 	const slides = [
 		{
-            title:"Hellow1",
-			desc: "Hellow1",
+			title: "Hannah Avelsgard",
+			desc: "They came in and painted our cabinets and our island and did an outstanding job! Super flexible and reasonably priced! Would recommend to anyone needing a painting job done!",
 		},
 		{
-			title:"Hellow2",
-			desc: "Hellow2",
+			title: "Randi Gottenborg",
+			desc: "It looks AWESOME! Thank you guys! Such great guys to work with! Very Professional and attention to detail. I love it! I highly recommend these guys!",
 		},
 		{
-			title:"Hellow3",
-			desc: "Hellow3",
+			title: "Angie Lee",
+			desc: "Can’t say enough about the great job these guys did with painting and texturing on ourremodel! They were polite, courteous, punctual, worked hard throughout the day, kept me updated on what they were doing, and asked questions about what we wanted as a customer. So thankful for their services! Highly recommend to anyone looking for painting services! And he is located in Casselton which is great for the community, although I know they go all over too.",
 		},
 
 		{
-			title:"Hellow4",
-			desc: "Hellow4",
+			title: "Randy Theis",
+			desc: "You won’t be disappointed if you have Adam and his guys do your work. I tell everyone to call him",
 		},
 		{
-			title:"Hellow5",
-			desc: "Hellow5",
+			title: "Kathy Bauer Laney",
+			desc: "I highly recommend Adam. He is easy to work with, respectful of your home, and his work isimpeccable.",
 		},
 	]
 
@@ -55,9 +55,13 @@ function Footer() {
 				<div className="p-5 ">
 					<ul>
 						<p className="text-gray-800 font-bold text-3xl pb-6">
-							Randash<span className="text-blue-950">Painting</span>
+							Randash<span className="text-blue-800">Painting</span>
 						</p>
-						<div className="flex gap-6 pb-5">
+						<img
+							src="https://i.imgur.com/4QnLsCx.png"
+							className="w-60 h-60"
+						/>
+						<div className="flex gap-6 p-8">
 							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
 							<FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
 							<FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
@@ -65,35 +69,39 @@ function Footer() {
 						</div>
 					</ul>
 				</div>
-				
-					<div className="max-w-[980px] h-[360px] w-full m-auto px-4 relative group">
-						<div
-							className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
-						>{slides[currentIndex].desc}</div>
-						{/* Left Arrow */}
-						<div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-							<BsChevronCompactLeft onClick={prevSlide} size={30} />
+
+				<div className="max-w-[980px] h-[360px] w-full m-auto px-4 relative group">
+					<div className="w-full h-full rounded-2xl duration-500">
+						<div className="bold text-2xl p-8">
+							{slides[currentIndex].desc}
 						</div>
-						{/* Right Arrow */}
-						<div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-							<BsChevronCompactRight onClick={nextSlide} size={30} />
-						</div>
-						<div className="flex top-4 justify-center py-2">
-							{slides.map((slide, slideIndex) => (
-								<div
-									key={slideIndex}
-									onClick={() => goToSlide(slideIndex)}
-									className="text-2xl cursor-pointer"
-								>
-									<RxDotFilled />
-								</div>
-							))}
+						<div className="italic text-xl p-8">
+							{" "}
+							- {slides[currentIndex].title}
 						</div>
 					</div>
-				
-				<div className="p-5">
+					{/* Left Arrow */}
+					<div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-1 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+						<BsChevronCompactLeft onClick={prevSlide} size={30} />
+					</div>
+					{/* Right Arrow */}
+					<div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-1 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+						<BsChevronCompactRight onClick={nextSlide} size={30} />
+					</div>
+					<div className="flex top-4 justify-center py-2">
+						{slides.map((slide, slideIndex) => (
+							<div
+								key={slideIndex}
+								onClick={() => goToSlide(slideIndex)}
+								className="text-2xl cursor-pointer"
+							></div>
+						))}
+					</div>
+				</div>
+
+				<div className="lg:p-8">
 					<ul>
-						<p className="text-gray-800 font-bold text-2xl pb-4">
+						<p className="text-gray-800 font-bold text-2xl p-4">
 							Shortcuts
 						</p>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
