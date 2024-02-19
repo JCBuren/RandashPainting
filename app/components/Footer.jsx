@@ -21,7 +21,7 @@ function Footer() {
 		},
 		{
 			title: "Angie Lee",
-			desc: "Can’t say enough about the great job these guys did with painting and texturing on ourremodel! They were polite, courteous, punctual, worked hard throughout the day, kept me updated on what they were doing, and asked questions about what we wanted as a customer. So thankful for their services! Highly recommend to anyone looking for painting services! And he is located in Casselton which is great for the community, although I know they go all over too.",
+			desc: "Can’t say enough about the great job these guys did with painting and texturing on ourremodel! They were polite, courteous, punctual, worked hard throughout the day, kept me updated on what they were doing, and asked questions about what we wanted as a customer. So thankful for their services! Highly recommend to anyone looking for painting services! And he is located in Casselton which is great for the community.",
 		},
 
 		{
@@ -73,8 +73,8 @@ function Footer() {
 				</div>
 
 				<div className="max-w-[980px] h-[360px] w-full m-auto px-4 relative group">
-					<div className="w-full h-full rounded-2xl duration-500">
-						<div className="bold text-2xl p-8">
+					<div className="w-full h-full duration-500 ">
+						<div className="text-xl bold px-8 lg:text-2xl">
 							{slides[currentIndex].desc}
 						</div>
 						<div className="italic text-xl p-8">
@@ -100,34 +100,12 @@ function Footer() {
 						))}
 					</div>
 				</div>
-				<div className="bold text-2xl p-10 mt-16">
+				<div className="bold text-2xl p-10 mt-14">
 					Leave us a Review on Google!
 					<FcGoogle size={80} className="flex" />
 				</div>
-				{/* <div className="lg:p-8">
-					<ul>
-						<p className="text-gray-800 font-bold text-2xl p-4">
-							Shortcuts
-						</p>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Home
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Services
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Contact Us
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Reviews
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							About Us{" "}
-						</li>
-					</ul>
-				</div> */}
 			</div>
-			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
+			<div className="flex flex-col justify-center items-center text-center p-5 bg-gray-50">
 				<h1 className=" text-gray-800 font-semibold">
 					© 2024-2025 All rights reserved | Built by{" "}
 					<span className="hover:text-blue-600 font-semibold cursor-pointer">
