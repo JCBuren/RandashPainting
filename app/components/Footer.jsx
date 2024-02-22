@@ -20,8 +20,8 @@ function Footer() {
 			desc: "It looks AWESOME! Thank you guys! Such great guys to work with! Very Professional and attention to detail. I love it! I highly recommend these guys!",
 		},
 		{
-			title: "Angie Lee",
-			desc: "Can’t say enough about the great job these guys did with painting and texturing on ourremodel! They were polite, courteous, punctual, worked hard throughout the day, kept me updated on what they were doing, and asked questions about what we wanted as a customer. So thankful for their services! Highly recommend to anyone looking for painting services! And he is located in Casselton which is great for the community.",
+			title: "Derek Neu",
+			desc: "Great customer service and great craftsmanship. Would recommend to anyone looking for a reputable painting company",
 		},
 
 		{
@@ -30,7 +30,7 @@ function Footer() {
 		},
 		{
 			title: "Kathy Bauer Laney",
-			desc: "I highly recommend Adam. He is easy to work with, respectful of your home, and his work isimpeccable.",
+			desc: "I highly recommend Adam. He is easy to work with, respectful of your home, and his work is impeccable.",
 		},
 	]
 
@@ -53,8 +53,8 @@ function Footer() {
 	}
 	return (
 		<>
-			<div className="bg-gray-200 h-1/2 w-full flex md:flex-row flex-col justify-around items-start">
-				<div className="p-5 ">
+			<div className="bg-gray-200 h-1/2 w-full flex md:flex-row flex-col justify-around items-start mt-10">
+				<div className="p-8 ">
 					<ul>
 						<p className="text-gray-800 font-bold text-3xl pb-6">
 							Randash<span className="text-blue-800">Painting</span>
@@ -72,12 +72,12 @@ function Footer() {
 					</ul>
 				</div>
 
-				<div className="max-w-[980px] h-[360px] w-full m-auto px-4 relative group">
+				<div className="max-w-[980px] h-[360px] w-full m-auto p-4 relative group">
 					<div className="w-full h-full duration-500 ">
-						<div className="text-xl bold px-8 lg:text-2xl">
-							{slides[currentIndex].desc}
+						<div className="text-xl bold p-10 lg:text-3xl text-center">
+							"{slides[currentIndex].desc}"
 						</div>
-						<div className="italic text-xl p-8">
+						<div className="italic text-2xl p-8">
 							{" "}
 							- {slides[currentIndex].title}
 						</div>
@@ -100,7 +100,7 @@ function Footer() {
 						))}
 					</div>
 				</div>
-				<div className="bold text-2xl p-10 mt-14">
+				<div className="bold text-2xl p-10 items-center">
 					Leave us a Review on Google!
 					<FcGoogle size={80} className="flex" />
 				</div>

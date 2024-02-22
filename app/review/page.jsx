@@ -14,9 +14,22 @@ export default function Review() {
 						Check Out our Recent Reviews!
 					</h2>
 					<div className="grid grid-rows-1 grid-cols-3 gap-20">
-						<div className="py-12 px-12 border-4 border-black rounded-xl bg-white text-black opacity-60 font-bold text-xl">Hellow World</div>
-						<div className="py-12 px-12 border-4 border-black rounded-xl bg-white text-black opacity-60 font-bold text-xl">Hellow World</div>
-						<div className="py-12 px-12 border-4 border-black rounded-xl bg-white text-black opacity-60 font-bold text-xl" >Hellow World</div>
+						<div className="py-12 px-12 border-4 border-black rounded-xl bg-white text-black opacity-60 text-xl">
+							Can’t say enough about the great job these guys did with
+							painting and texturing on ourremodel! They were polite,
+							courteous, punctual, worked hard throughout the day, kept
+							me updated on what they were doing, and asked questions
+							about what we wanted as a customer. So thankful for their
+							services! Highly recommend to anyone looking for painting
+							services! And he is located in Casselton which is great for
+							the community.
+						</div>
+						<div className="py-12 px-12 border-4 border-black rounded-xl bg-white text-black opacity-60 font-bold text-xl">
+							Hellow World
+						</div>
+						<div className="py-12 px-12 border-4 border-black rounded-xl bg-white text-black opacity-60 font-bold text-xl">
+							Hellow World
+						</div>
 					</div>
 					<p className="py-20 text-3xl">
 						Have a great experience, click below to leave a review

@@ -10,10 +10,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			fontFamily: {
-				sans: ['"Raleway"', ...defaultTheme.fontFamily.sans],
+			colors: {
+				"skyy-blue": "#2b90b5",
 			},
-
 			plugins: [],
 		},
 	},
