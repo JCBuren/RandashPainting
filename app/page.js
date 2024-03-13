@@ -1,8 +1,8 @@
 import Head from "next/head"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
-import Slider from "./components/Slider"
-import { SliderData } from "./components/SliderData"
+import Slider from "./gallery/Slider"
+import { SliderData } from "./gallery/SliderData"
 import Contact from "./contact/page"
 import Service from "./service/page"
 import Footer from "./components/Footer"
@@ -19,7 +19,7 @@ export default function Home() {
 				message="Performing quality painting services throughout the Fargo/ Moorhead and surrounding area for over 70 years.  
 				"
 			/>
-			<Slider slides={SliderData} />
+			
 			<Footer/>
 		</div>
 	)
