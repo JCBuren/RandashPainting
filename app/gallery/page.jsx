@@ -1,7 +1,6 @@
 "use client"
 
 import React from "react"
-import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import Slider from "./Slider"
 import { SliderData } from "./SliderData"
@@ -18,10 +17,10 @@ export default function Gallery({ heading, message }) {
 					<p className="py-5 text-2xl">
 						Here are a Few of Our Recent Projects for Inspiration
 					</p>
-					<p className="pb-6 text-2xl">Contact Us for a Quote</p>
+					<p className="pb-6 text-2xl">Contact Us for an Estimate</p>
 					<Link href="/contact">
 						<button className="px-8 py-2 border-2 rounded-xl font-bold">
-							Request a Quote!
+							Request an Estimate!
 						</button>
 					</Link>{" "}
 				</div>

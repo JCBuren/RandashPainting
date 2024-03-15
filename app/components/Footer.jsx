@@ -53,15 +53,12 @@ function Footer() {
 	}
 	return (
 		<>
-			<div className="bg-gray-200 h-1/2 w-full flex md:flex-row flex-col justify-around items-start mt-10">
-				<div className="p-8 ">
+			<div className="bg-gray-200 h-1/2 w-full flex md:flex-row flex-col mt-10 items-center">
+				<div className="p-8">
 					<ul>
-						<p className="text-gray-800 font-bold text-3xl pb-6">
-							Randash<span className="text-blue-800">Painting</span>
-						</p>
 						<img
-							src="https://i.imgur.com/4QnLsCx.png"
-							className="w-40 h-40"
+							src="https://i.imgur.com/hxhlOoT.jpg"
+							className="w-90 h-60"
 						/>
 						<div className="flex gap-6 p-8">
 							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />

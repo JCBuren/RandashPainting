@@ -10,10 +10,10 @@ export default function Contact() {
 				<div className="absolute top-0 left-0 right-0 bottom-0 bg-black/60 z-[2]" />
 				<div className="p-5 text-white z-[2] mt-[-10rem]">
 					<h2 className="text-5xl font-bold py-5">
-						Request a Quote Below!
+						Request an Estimate Below!
 					</h2>
 					<p className="py-2 text-xl">
-						Submit a quote in less than 30 seconds by filling out the form
+						Submit a request for an Estimate in less than 30 seconds by filling out the form
 						below!
 					</p>
 					<p className="text-xl">
@@ -25,9 +25,9 @@ export default function Contact() {
 			</div>
 			<Navbar />
 			
-			<div className="flex max-h-full">
-				<div className="col-span-3 w-4/5 h-auto lg:p-4 ">
-					<h1 className="text-3xl w-full">Request a Quote</h1>
+			<div className="flex max-h-full justify-center">
+				<div className="col-span-3 w-1/2 h-auto lg:p-4 ">
+					<h1 className="text-3xl w-full">Request an Estimate</h1>
 					<div className="p-4">
 						<form>
 							<div className="grid md:grid-cols-2 gap-4 w-full py-2 ">
@@ -66,7 +66,7 @@ export default function Contact() {
 							</div>
 							<div className="flex flex-col py-2 w-full">
 								<label className="uppercase text-sm py-2 font-bold">
-									Message
+									Project Details
 								</label>
 								<textarea
 									className="border-2 rounded-lg p-3 border-gray-300"
