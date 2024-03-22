@@ -14,68 +14,48 @@ const Commercial = () => {
 	}
 	return (
 		<div className="max-w-[1240px] mx-auto py-4 text-center">
-			<h1 className="font-bold text-3xl p-4">Recent Residential Projects</h1>
+			<h1 className="font-bold text-3xl p-4">Recent Exterior Projects</h1>
 			<div className="grid grid-cols-1 md:grid-cols-5 p-4 gap-4">
 				<div className="w-full h-full col-span-2 md:col-span-3 row-span-2">
 					<Image
-						src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+						src="https://i.imgur.com/ROiAI0E.jpg"
 						alt="/"
 						width={677}
 						height={451}
-						onClick={() =>
-							openModal(
-								"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
-							)
-						}
+						onClick={() => openModal("https://i.imgur.com/ROiAI0E.jpg")}
 						className="cursor-pointer"
 					/>
 				</div>
 				<Image
-					src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+					src="https://i.imgur.com/0Ujli8z.jpg"
 					alt="/"
 					width={677}
 					height={451}
-					onClick={() =>
-						openModal(
-							"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
-						)
-					}
+					onClick={() => openModal("https://i.imgur.com/0Ujli8z.jpg")}
 					className="cursor-pointer"
 				/>
 				<Image
-					src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+					src="https://i.imgur.com/CST8u2L.jpg"
 					alt="/"
 					width={677}
 					height={451}
-					onClick={() =>
-						openModal(
-							"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
-						)
-					}
+					onClick={() => openModal("https://i.imgur.com/CST8u2L.jpg")}
 					className="cursor-pointer"
 				/>
 				<Image
-					src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+					src="https://i.imgur.com/Ci3RlWh.jpg"
 					alt="/"
 					width={677}
 					height={451}
-					onClick={() =>
-						openModal(
-							"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
-						)
-					}
+					onClick={() => openModal("https://i.imgur.com/Ci3RlWh.jpg")}
 					className="cursor-pointer"
 				/>
 				<Image
-					src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+					src="https://i.imgur.com/94YC3B8.jpg"
 					alt="/"
 					width={677}
 					height={451}
-					onClick={() =>
-						openModal(
-							"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
-						)
-					}
+					onClick={() => openModal("https://i.imgur.com/94YC3B8.jpg")}
 					className="cursor-pointer"
 				/>
 			</div>

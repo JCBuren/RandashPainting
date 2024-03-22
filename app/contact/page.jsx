@@ -6,25 +6,30 @@ export default function Contact() {
 	const Quote = () => {}
 	return (
 		<div>
-			<div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('../app/assets/Paint3.jpg')]">
-				<div className="absolute top-0 left-0 right-0 bottom-0 bg-black/60 z-[2]" />
-				<div className="p-5 text-white z-[2] mt-[-10rem]">
-					<h2 className="text-5xl font-bold py-5">
-						Request an Estimate Below!
-					</h2>
-					<p className="py-2 text-xl">
-						Submit a request for an Estimate in less than 30 seconds by filling out the form
-						below!
-					</p>
-					<p className="text-xl">
-						{" "}
-						One of our team members will reach out to you within 24 - 48
-						hours!
-					</p>
+			<div
+				className="relative mb-12 bg-fixed bg-center bg-cover bg-[url('../app/assets/Paint3.jpg')]"
+				style={{ height: "calc(80vh)" }}
+			>
+				<div className="absolute inset-0 bg-black/60 z-[1]" />
+				<div className="absolute inset-0 flex items-center justify-center z-[2]">
+					<div className="p-5 text-white">
+						<h2 className="text-5xl font-bold py-5">
+							Request an Estimate Below!
+						</h2>
+						<p className="py-2 text-xl">
+							Submit a request for an Estimate in less than 30 seconds by
+							filling out the form below!
+						</p>
+						<p className="text-xl">
+							{" "}
+							One of our team members will reach out to you within 24 -
+							48 hours!
+						</p>
+					</div>
 				</div>
 			</div>
 			<Navbar />
-			
+
 			<div className="flex max-h-full justify-center">
 				<div className="col-span-3 w-1/2 h-auto lg:p-4 ">
 					<h1 className="text-3xl w-full">Request an Estimate</h1>
@@ -80,7 +85,6 @@ export default function Contact() {
 						</form>
 					</div>
 				</div>
-				
 			</div>
 			<Footer />
 		</div>

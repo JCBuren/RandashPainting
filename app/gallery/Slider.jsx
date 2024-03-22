@@ -4,7 +4,6 @@ import React, { useState } from "react"
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa"
 import { SliderData } from "./SliderData"
 
-
 const Slider = ({ slides }) => {
 	const [current, setCurrent] = useState(0)
 	const length = slides.length
