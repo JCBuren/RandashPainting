@@ -3,8 +3,9 @@ import Image from "next/legacy/image"
 import React, { useState } from "react"
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa"
 import { SliderData } from "./SliderData"
+import { BtsData } from "./BtsData"
 
-const Slider = ({ slides }) => {
+const Bts = ({ slides }) => {
 	const [current, setCurrent] = useState(0)
 	const length = slides.length
 
@@ -22,7 +23,7 @@ const Slider = ({ slides }) => {
 	return (
 		<div id="gallery" className="max-w-[1700px] mx-auto p-6 ">
 			<div className="relative flex justify-center p-4">
-				{SliderData.map((slide, index) => {
+				{BtsData.map((slide, index) => {
 					return (
 						<div
 							key={index}
@@ -42,7 +43,7 @@ const Slider = ({ slides }) => {
 									src={slide.src}
 									alt="/"
 									width="1440"
-									height="720"
+									height="820"
 									objectFit="cover"
 								/>
 							)}
@@ -59,4 +60,4 @@ const Slider = ({ slides }) => {
 	)
 }
 
-export default Slider
+export default Bts

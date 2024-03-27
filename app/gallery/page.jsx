@@ -6,6 +6,8 @@ import Slider from "./Slider"
 import { SliderData } from "./SliderData"
 import Link from "next/link"
 import Footer from "../components/Footer"
+import Bts from "./Bts"
+import { BtsData } from "./BtsData"
 
 export default function Gallery({ heading, message }) {
 	return (
@@ -33,6 +35,9 @@ export default function Gallery({ heading, message }) {
 			<Navbar />
 			<div className="bg-[#F2F3F1]">
 				<Slider slides={SliderData} />
+			</div>
+			<div>
+				<Bts slides={BtsData} />
 			</div>
 			<Footer />
 		</div>
