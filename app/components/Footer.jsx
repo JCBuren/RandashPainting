@@ -8,6 +8,8 @@ import { FaLinkedin } from "react-icons/fa"
 import { FaYoutube } from "react-icons/fa"
 import { FaFacebook } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
+import Image from "next/image"
+import Link from "next/link"
 
 function Footer() {
 	const slides = [
@@ -54,20 +56,17 @@ function Footer() {
 	return (
 		<>
 			<div className="bg-gray-200 h-1/2 w-full flex md:flex-row flex-col mt-10 items-center">
-				<div className="p-8">
-					<ul>
-						<img
-							src="https://i.imgur.com/hxhlOoT.jpg"
-							className="w-90 h-60"
-						/>
-						<div className="flex gap-6 p-8">
-							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
-							<FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
-							<FcGoogle className="text-2xl cursor-pointer" />
-							<FaFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
-						</div>
-					</ul>
-				</div>
+				<ul>
+					<img
+						src="https://i.imgur.com/hxhlOoT.jpg"
+						className="w-90 h-60"
+					/>
+					<div className="flex gap-6 p-4">
+						<FaLinkedin className="text-3xl cursor-pointer hover:text-blue-600" />
+						<FcGoogle className="text-3xl cursor-pointer" />
+						<FaFacebook className="text-3xl cursor-pointer hover:text-blue-600" />
+					</div>
+				</ul>
 
 				<div className="max-w-[980px] h-[360px] w-full m-auto p-4 relative group">
 					<div className="w-full h-full duration-500 ">
@@ -97,9 +96,16 @@ function Footer() {
 						))}
 					</div>
 				</div>
-				<div className="bold text-2xl p-10 items-center">
-					Leave us a Review on Google!
-					<FcGoogle size={80} className="flex" />
+				<div className="bold text-2xl pr-10 items-center">
+					<Link href="https://www.google.com/search?q=randash+painting&rlz=1C1CHBF_enUS881US881&oq=randash+painting&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRg8MgYIAhBFGDwyBggDEEUYPNIBCDE3OTZqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8">
+						<Image
+							src="https://i.imgur.com/GqcVKV5.jpg"
+							alt="/"
+							width={440}
+							height={320}
+							className="rounded-xl flex"
+						/>
+					</Link>
 				</div>
 			</div>
 			<div className="flex flex-col justify-center items-center text-center p-5 bg-gray-50">

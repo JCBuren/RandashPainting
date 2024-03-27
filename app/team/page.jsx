@@ -9,7 +9,7 @@ export default function Team() {
 	return (
 		<>
 			<div
-				className="relative mb-12 bg-fixed bg-center bg-cover bg-[url('../app/assets/Fitness.jpg')]"
+				className="relative mb-12 bg-fixed bg-center bg-cover bg-[url('../app/assets/Van.jpg')]"
 				style={{ height: "calc(80vh)" }}
 			>
 				<div className="absolute inset-0 bg-black/60 z-[1]" />
@@ -24,7 +24,7 @@ export default function Team() {
 			</div>
 			<div className="grid grid-flow-row justify-items-center gap-12 bg-[#F2F3F1]">
 				<Image
-					src="https://i.imgur.com/DPvQ2ZA.png"
+					src="https://i.imgur.com/jbqBfcG.jpg"
 					alt="/"
 					width={980}
 					height={620}
@@ -53,8 +53,8 @@ export default function Team() {
 				<Image
 					src="https://i.imgur.com/EC2hZbp.png"
 					alt="/"
-					width={1720}
-					height={980}
+					width={1480}
+					height={720}
 					className="ml-12"
 				/>
 			</div>
