@@ -1,9 +1,30 @@
 "use client"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import { useRef } from "react"
+import emailjs from "@emailjs/browser"
 
 export default function Contact() {
 	const Quote = () => {}
+
+	const form = useRef()
+
+	const sendEmail = (e) => {
+		e.preventDefault()
+
+		emailjs
+			.sendForm("service_nruae3p", "template_3zpq6yc", form.current, {
+				publicKey: "Kb80hC31MdhmqjNVa",
+			})
+			.then(
+				() => {
+					console.log("SUCCESS!")
+				},
+				(error) => {
+					console.log("FAILED...", error.text)
+				}
+			)
+	}
 	return (
 		<div>
 			<div
@@ -34,7 +55,7 @@ export default function Contact() {
 				<div className="col-span-3 w-1/2 h-auto lg:p-4 ">
 					<h1 className="text-3xl w-full">Request an Estimate</h1>
 					<div className="p-4">
-						<form>
+						<form ref={form} onSubmit={sendEmail}>
 							<div className="grid md:grid-cols-2 gap-4 w-full py-2 ">
 								<div className="flex flex-col">
 									<label className="uppercase text-sm py-2 font-bold">
@@ -52,7 +73,7 @@ export default function Contact() {
 									</label>
 									<input
 										className="border-2 rounded-lg p-3 flex border-gray-300"
-										type="text"
+										type="email"
 										name="user_email"
 									/>
 								</div>
@@ -79,7 +100,11 @@ export default function Contact() {
 									name="message"
 								></textarea>
 							</div>
-							<button className="w-[100%] p-4 text-white mb-12 mt-4 font-bold rounded-xl bg-black">
+							<button
+								className="w-[100%] p-4 text-white mb-12 mt-4 font-bold rounded-xl bg-black"
+								type="submit"
+								value="send"
+							>
 								Send Message
 							</button>
 						</form>
