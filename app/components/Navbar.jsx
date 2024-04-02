@@ -67,11 +67,11 @@ const Navbar = () => {
 							Gallery
 						</Link>
 					</li>
-					{/* <li className="p-4">
+					<li className="p-4">
 						<Link href="/review" className="font-bold text-xl">
 							Reviews
 						</Link>
-					</li> */}
+					</li>
 					<li className="p-4">
 						<Link href="/team" className="font-bold text-xl">
 							About Us
@@ -79,7 +79,7 @@ const Navbar = () => {
 					</li>
 				</ul>
 
-				{/* Mobile menu button */}
+				{/* Mobile */}
 
 				<div onClick={handleNav} className="sm:hidden block z-10">
 					{nav ? (
@@ -121,12 +121,12 @@ const Navbar = () => {
 							>
 								<Link href="/gallery">Gallery</Link>
 							</li>
-							{/* <li
+							<li
 								onClick={handleNav}
 								className="p-4 text-4xl hover:text-gray-500"
 							>
 								<Link href="/review">Reviews</Link>
-							</li> */}
+							</li>
 							<li
 								onClick={handleNav}
 								className="p-4 text-4xl hover:text-gray-500"

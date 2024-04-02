@@ -1,67 +1,47 @@
 "use client"
+import { useState } from "react"
 
-import React, { useState } from "react"
-import { BsFillCircleFill, BsCircle } from "react-icons/bs"
-import Review from "./Review"
+const ReviewSlider = ({ reviews }) => {
+	const [currentReviewIndex, setCurrentReviewIndex] = useState(0)
 
-const ReviewsSlider = ({ reviews }) => {
-	const [currentIndex, setCurrentIndex] = useState(0)
-
-	const handlePrev = () => {
-		setCurrentIndex((prevIndex) =>
-			prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
-		)
-	}
-
-	const handleNext = () => {
-		setCurrentIndex((prevIndex) =>
+	const nextReview = () => {
+		setCurrentReviewIndex((prevIndex) =>
 			prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
 		)
 	}
 
+	const prevReview = () => {
+		setCurrentReviewIndex((prevIndex) =>
+			prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
+		)
+	}
+
 	return (
-		<div className="relative">
-			<div className="flex overflow-hidden">
-				{reviews.map((review, index) => (
-					<div
-						key={index}
-						className={`transform transition-transform duration-300 ${
-							index === currentIndex
-								? "translate-x-0"
-								: "translate-x-full"
-						}`}
-					>
-						<Review review={review} />
-					</div>
-				))}
+		<div className="relative w-full mx-auto" style={{ width: "calc(75vw)" }}>
+			<div className="relative">
+				<button
+					className="absolute top-1/2 -left-8 transform -translate-y-1/2 px-3 py-2 bg-gray-800 text-white rounded-xl"
+					onClick={prevReview}
+				>
+					&larr;
+				</button>
+				<button
+					className="absolute top-1/2 -right-8 transform -translate-y-1/2 px-3 py-2 bg-gray-800 text-white rounded-xl"
+					onClick={nextReview}
+				>
+					&rarr;
+				</button>
+				<div className="p-8 bg-gray-100 rounded-md">
+					<p className="text-2xl font-bold py-8">
+						{reviews[currentReviewIndex].author}
+					</p>
+					<p className="text-gray-800 text-xl font-semibold">
+						{reviews[currentReviewIndex].content}
+					</p>
+				</div>
 			</div>
-			<div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-				{reviews.map((_, index) => (
-					<div
-						key={index}
-						className={`cursor-pointer ${
-							index === currentIndex ? "text-blue-500" : "text-gray-400"
-						}`}
-						onClick={() => setCurrentIndex(index)}
-					>
-						{index === currentIndex ? <BsFillCircleFill /> : <BsCircle />}
-					</div>
-				))}
-			</div>
-			<button
-				className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md"
-				onClick={handlePrev}
-			>
-				&lt;
-			</button>
-			<button
-				className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md"
-				onClick={handleNext}
-			>
-				&gt;
-			</button>
 		</div>
 	)
 }
 
-export default ReviewsSlider
+export default ReviewSlider
