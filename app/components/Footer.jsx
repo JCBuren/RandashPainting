@@ -60,6 +60,7 @@ function Footer() {
 					<img
 						src="https://i.imgur.com/hxhlOoT.jpg"
 						className="w-90 h-60"
+						alt="/"
 					/>
 					<div className="flex gap-6 p-4">
 						<FaLinkedin className="text-3xl cursor-pointer hover:text-blue-600" />
@@ -71,10 +72,10 @@ function Footer() {
 				<div className="max-w-[980px] h-[360px] w-full m-auto p-4 relative group">
 					<div className="w-full h-full duration-500 ">
 						<div className="text-xl bold p-10 lg:text-3xl text-center">
-							"{slides[currentIndex].desc}"
-						</div>
+							`{slides[currentIndex].desc}`
+						</div> 
 						<div className="italic text-2xl p-8">
-							{" "}
+							
 							- {slides[currentIndex].title}
 						</div>
 					</div>
