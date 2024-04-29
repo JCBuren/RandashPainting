@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/
+    - export DEPLOYPATH=/home/tbsc3cmdphbv/public_html/
     - /bin/cp -R jsconfig.json $DEPLOYPATH
     - /bin/cp -R next.config.js $DEPLOYPATH
     - /bin/cp -R package-lock.json $DEPLOYPATH
