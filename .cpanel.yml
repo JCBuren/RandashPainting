@@ -2,4 +2,10 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/example/public_html/
-    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R jsconfig.json $DEPLOYPATH
+    - /bin/cp -R next.config.js $DEPLOYPATH
+    - /bin/cp -R package-lock.json $DEPLOYPATH
+    - /bin/cp -R package.json $DEPLOYPATH
+    - /bin/cp -R postcss.config.js $DEPLOYPATH
+    - /bin/cp -R tailwind.config.js $DEPLOYPATH
+  
