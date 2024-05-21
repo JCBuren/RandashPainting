@@ -18,9 +18,10 @@ export default function Contact() {
 			})
 			.then(
 				() => {
-					console.log("SUCCESS!")
+					alert("Your message has been sent successfully!") // Success alert
 				},
 				(error) => {
+					alert("Failed to send the message. Please try again later.") // Error alert
 					console.log("FAILED...", error.text)
 				}
 			)
@@ -33,11 +34,11 @@ export default function Contact() {
 			>
 				<div className="absolute inset-0 bg-black/60 z-[1]" />
 				<div className="absolute inset-0 flex items-center justify-center z-[2]">
-					<div className="p-5 text-white">
+					<div className="p-5 text-white ">
 						<h2 className="text-5xl font-bold py-5">
 							Request an Estimate Below!
 						</h2>
-						<p className="py-2 text-xl">
+						<p className="sm:text-lg py-4 text-xl">
 							Submit a request for an Estimate in less than 30 seconds by
 							filling out the form below!
 						</p>
@@ -45,6 +46,10 @@ export default function Contact() {
 							{" "}
 							One of our team members will reach out to you within 24 -
 							48 hours!
+						</p>
+						<p className="text-xl py-4">
+							{" "}
+							Or Give Us a Call at 701-388-8624
 						</p>
 					</div>
 				</div>

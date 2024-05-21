@@ -32,7 +32,7 @@ export default function Service() {
 			<Navbar />
 			<div className="bg-[#F2F3F1]">
 				<div className="grid grid-rows-1 md:grid-cols-2 gap-4 justify-center align-middle w-4/5 p-8 m-auto sm:grid-cols-1 ">
-					<div className=" p-8 lg:grid grid-cols-2 ">
+					<div className="p-8 lg:grid grid-cols-2">
 						<div className="font-bold lg:text-2xl sm:text-sm">
 							Interior Painting:
 						</div>
@@ -45,15 +45,11 @@ export default function Service() {
 								<FaCircleDot size={10} className="mt-2 mx-2" />
 								Drywall Repair
 							</li>
-							<li className="lg:text-xl mx-2 py-1 flex">
-								<FaCircleDot size={10} className="mt-2 mx-2" />
-								Custom Wood Projects
-							</li>
 						</ul>
-						<div className="font-bold lg:text-2xl py-4">
+						<div className="font-bold lg:text-2xl py-6">
 							Interior Wood Work:
 						</div>
-						<ul>
+						<ul className="pt-6">
 							<li className="lg:text-xl mx-2 py-1 flex">
 								<FaCircleDot size={10} className="mt-2 mx-2" />
 								Trim & Baseboards
@@ -66,9 +62,13 @@ export default function Service() {
 								<FaCircleDot size={10} className="mt-2 mx-2" />
 								Doors
 							</li>
+							<li className="lg:text-xl mx-2 py-1 flex">
+								<FaCircleDot size={10} className="mt-2 mx-2" />
+								Custom Wood Projects
+							</li>
 						</ul>
 					</div>
-					<div className=" p-8 lg:grid grid-cols-2">
+					<div className="p-8 lg:grid grid-cols-2">
 						<div className="font-bold lg:text-2xl sm:text-sm">
 							Cabinet Services:
 						</div>
