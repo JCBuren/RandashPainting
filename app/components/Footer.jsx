@@ -59,7 +59,7 @@ function Footer() {
 				<ul>
 					<img
 						src="https://i.imgur.com/hxhlOoT.jpg"
-						className="w-90 h-60"
+						className="w-90 h-60 object-contain"
 						alt="/"
 					/>
 					<div className="flex gap-6 p-4">
@@ -72,10 +72,9 @@ function Footer() {
 				<div className="max-w-[980px] h-[360px] w-full m-auto p-4 relative group">
 					<div className="w-full h-full duration-500 ">
 						<div className="text-xl bold p-10 lg:text-3xl text-center">
-							`{slides[currentIndex].desc}`
-						</div> 
+							{slides[currentIndex].desc}
+						</div>
 						<div className="italic text-2xl p-8">
-							
 							- {slides[currentIndex].title}
 						</div>
 					</div>
@@ -97,7 +96,7 @@ function Footer() {
 						))}
 					</div>
 				</div>
-				<div className="bold text-2xl pr-10 items-center">
+				<div className="bold text-2xl lg:pr-10">
 					<Link href="https://www.google.com/search?q=randash+painting&rlz=1C1CHBF_enUS881US881&oq=randash+painting&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRg8MgYIAhBFGDwyBggDEEUYPNIBCDE3OTZqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8">
 						<Image
 							src="https://i.imgur.com/GqcVKV5.jpg"

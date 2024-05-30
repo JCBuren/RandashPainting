@@ -16,7 +16,7 @@ export default function Home() {
 			<Navbar />
 			<Hero
 				heading="Randash Painting LLC"
-				message="Performing quality painting services throughout the Fargo/ Moorhead and surrounding area for over 70 years.  
+				message="Performing quality painting services throughout the Fargo/Moorhead and surrounding area for over 70 years.  
 				"
 			/>
 			

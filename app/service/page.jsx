@@ -16,9 +16,11 @@ export default function Service() {
 			>
 				<div className="absolute inset-0 bg-black/60 z-[1]" />
 				<div className="absolute inset-0 flex items-center justify-center z-[2]">
-					<div className="p-5 text-white">
-						<h2 className="text-5xl mt-20 font-bold">Services Offered</h2>
-						<p className="py-5 text-2xl">
+					<div className="p-5 text-white text-center max-w-lg mx-auto mt-20 md:mt-32">
+						<h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">
+							Services Offered
+						</h2>
+						<p className="py-5 text-lg md:text-xl">
 							All Services are Available for Residential & Commercial
 						</p>
 						<Link href="/contact">

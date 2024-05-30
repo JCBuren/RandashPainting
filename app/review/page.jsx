@@ -38,11 +38,8 @@ export default function Review() {
 				style={{ height: "calc(80vh)" }}
 			>
 				<Navbar />
-				<div
-					className="container mx-auto py-8"
-					
-				>
-					<ReviewSlider reviews={reviews}  />
+				<div className="container mx-auto mt-12 py-8">
+					<ReviewSlider reviews={reviews} />
 				</div>
 			</div>
 			<Footer />

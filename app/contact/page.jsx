@@ -34,21 +34,19 @@ export default function Contact() {
 			>
 				<div className="absolute inset-0 bg-black/60 z-[1]" />
 				<div className="absolute inset-0 flex items-center justify-center z-[2]">
-					<div className="p-5 text-white ">
-						<h2 className="text-5xl font-bold py-5">
-							Request an Estimate Below!
+					<div className="p-5 text-white text-center max-w-lg mx-auto mt-32 md:mt- sm:mt-64">
+						<h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">
+							Request an Estimate!
 						</h2>
-						<p className="sm:text-lg py-4 text-xl">
+						<p className="py-5 text-xl md:text-2xl">
 							Submit a request for an Estimate in less than 30 seconds by
 							filling out the form below!
 						</p>
-						<p className="text-xl">
-							{" "}
+						<p className="text-xl md:text-2xl">
 							One of our team members will reach out to you within 24 -
 							48 hours!
 						</p>
-						<p className="text-xl py-4">
-							{" "}
+						<p className="py-5 text-xl md:text-2xl">
 							Or Give Us a Call at 701-388-8624
 						</p>
 					</div>
@@ -56,12 +54,14 @@ export default function Contact() {
 			</div>
 			<Navbar />
 
-			<div className="flex max-h-full justify-center">
-				<div className="col-span-3 w-1/2 h-auto lg:p-4 ">
-					<h1 className="text-3xl w-full">Request an Estimate</h1>
+			<div className="flex justify-center px-4">
+				<div className="w-full max-w-2xl lg:p-4">
+					<h1 className="text-3xl w-full text-center lg:text-left">
+						Request an Estimate
+					</h1>
 					<div className="p-4">
 						<form ref={form} onSubmit={sendEmail}>
-							<div className="grid md:grid-cols-2 gap-4 w-full py-2 ">
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full py-2">
 								<div className="flex flex-col">
 									<label className="uppercase text-sm py-2 font-bold">
 										Name
@@ -74,7 +74,7 @@ export default function Contact() {
 								</div>
 								<div className="flex flex-col">
 									<label className="uppercase text-sm py-2 font-bold">
-										Email{" "}
+										Email
 									</label>
 									<input
 										className="border-2 rounded-lg p-3 flex border-gray-300"
@@ -83,7 +83,7 @@ export default function Contact() {
 									/>
 								</div>
 							</div>
-							<div className="gap-4 w-full py-2">
+							<div className="grid grid-cols-1 gap-4 w-full py-2">
 								<div className="flex flex-col">
 									<label className="uppercase text-sm py-2 font-bold">
 										Phone Number
@@ -106,7 +106,7 @@ export default function Contact() {
 								></textarea>
 							</div>
 							<button
-								className="w-[100%] p-4 text-white mb-12 mt-4 font-bold rounded-xl bg-black"
+								className="w-full p-4 text-white mb-12 mt-4 font-bold rounded-xl bg-black"
 								type="submit"
 								value="send"
 							>

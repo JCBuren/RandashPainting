@@ -44,7 +44,7 @@ const Navbar = () => {
 		>
 			<div className="max-w-[1240px] m-auto flex justify-between items-center text-white ">
 				<Link href="/">
-					<img src={`${logoImage}`} className="w-64 h-64" alt="/"/>
+					<img src={`${logoImage}`} className="w-64 h-64" alt="/" />
 				</Link>
 				<ul style={{ color: `${textColor}` }} className="hidden sm:flex">
 					<li className="p-4">
@@ -131,7 +131,7 @@ const Navbar = () => {
 								onClick={handleNav}
 								className="p-4 text-4xl hover:text-gray-500"
 							>
-								<Link href="/team">Team Members</Link>
+								<Link href="/team">About Us</Link>
 							</li>
 						</ul>
 					</ul>
