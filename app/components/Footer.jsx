@@ -63,9 +63,27 @@ function Footer() {
 						alt="/"
 					/>
 					<div className="flex gap-6 p-4">
-						<FaLinkedin className="text-3xl cursor-pointer hover:text-blue-600" />
-						<FcGoogle className="text-3xl cursor-pointer" />
-						<FaFacebook className="text-3xl cursor-pointer hover:text-blue-600" />
+						<a
+							href="https://www.linkedin.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaLinkedin className="text-3xl cursor-pointer hover:text-blue-600" />
+						</a>
+						<a
+							href="https://www.google.com/search?q=randash+painting&rlz=1C1CHBF_enUS881US881&oq=randash+painting&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRg8MgYIAhBFGDwyBggDEEUYPNIBCDE3OTZqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FcGoogle className="text-3xl cursor-pointer" />
+						</a>
+						<a
+							href="https://www.facebook.com/Randash.Painting"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaFacebook className="text-3xl cursor-pointer hover:text-blue-600" />
+						</a>
 					</div>
 				</ul>
 
@@ -111,9 +129,15 @@ function Footer() {
 			<div className="flex flex-col justify-center items-center text-center p-5 bg-gray-50">
 				<h1 className=" text-gray-800 font-semibold">
 					© 2024-2025 All rights reserved | Built by{" "}
-					<span className="hover:text-blue-600 font-semibold cursor-pointer">
-						JB Creations{" "}
-					</span>
+					<a
+						href="https://jb-creations.vercel.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<span className="hover:text-blue-600 font-semibold cursor-pointer">
+							JB Creations{" "}
+						</span>
+					</a>
 				</h1>
 			</div>
 		</>
