@@ -1,32 +1,32 @@
 "use client"
-import { useState } from 'react';
-import Image from 'next/image';
-import { FaArrowCircleLeft, FaArrowCircleRight, FaTimes } from 'react-icons/fa';
+import { useState } from "react"
+import Image from "next/image"
+import { FaArrowCircleLeft, FaArrowCircleRight, FaTimes } from "react-icons/fa"
 
 const Slider = ({ slides }) => {
-	const [current, setCurrent] = useState(0);
-	const [isOpen, setIsOpen] = useState(false);
-	const length = slides.length;
+	const [current, setCurrent] = useState(0)
+	const [isOpen, setIsOpen] = useState(false)
+	const length = slides.length
 
 	const nextSlide = () => {
-		setCurrent(current === length - 1 ? 0 : current + 1);
-	};
+		setCurrent(current === length - 1 ? 0 : current + 1)
+	}
 
 	const prevSlide = () => {
-		setCurrent(current === 0 ? length - 1 : current - 1);
-	};
+		setCurrent(current === 0 ? length - 1 : current - 1)
+	}
 
 	const openModal = (index) => {
-		setCurrent(index);
-		setIsOpen(true);
-	};
+		setCurrent(index)
+		setIsOpen(true)
+	}
 
 	const closeModal = () => {
-		setIsOpen(false);
-	};
+		setIsOpen(false)
+	}
 
 	if (!Array.isArray(slides) || slides.length <= 0) {
-		return null;
+		return null
 	}
 
 	return (
@@ -35,7 +35,11 @@ const Slider = ({ slides }) => {
 				{slides.map((slide, index) => (
 					<div
 						key={index}
-						className={index === current ? 'opacity-[1] ease-in duration-1000' : 'opacity-0'}
+						className={
+							index === current
+								? "opacity-[1] ease-in duration-1000"
+								: "opacity-0"
+						}
 					>
 						<FaArrowCircleLeft
 							onClick={prevSlide}
@@ -92,7 +96,7 @@ const Slider = ({ slides }) => {
 				</div>
 			)}
 		</div>
-	);
-};
+	)
+}
 
-export default Slider;
+export default Slider

@@ -19,7 +19,9 @@ export default function Gallery({ heading, message }) {
 				<div className="absolute inset-0 bg-black/60 z-[1]" />
 				<div className="absolute inset-0 flex items-center justify-center z-[2]">
 					<div className="p-5 text-white text-center max-w-lg mx-auto mt-20 md:mt-32">
-						<h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">Project Gallery</h2>
+						<h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">
+							Project Gallery
+						</h2>
 						<p className="py-5 text-2xl">
 							Here are a Few of Our Recent Projects for Inspiration
 						</p>

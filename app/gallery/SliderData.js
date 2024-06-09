@@ -26,4 +26,3 @@ export const SliderData = [
 		src: "https://i.imgur.com/XDdiZ56.jpg",
 	},
 ]
-

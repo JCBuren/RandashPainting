@@ -1,47 +1,101 @@
 "use client"
 import { useState } from "react"
+import Image from "next/image"
+import { FaArrowCircleLeft, FaArrowCircleRight, FaTimes } from "react-icons/fa"
 
-const ReviewSlider = ({ reviews }) => {
-	const [currentReviewIndex, setCurrentReviewIndex] = useState(0)
+const ReviewSlider = ({ slides }) => {
+	const [current, setCurrent] = useState(0)
+	const [isOpen, setIsOpen] = useState(false)
+	const length = slides.length
 
-	const nextReview = () => {
-		setCurrentReviewIndex((prevIndex) =>
-			prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
-		)
+	const nextSlide = () => {
+		setCurrent(current === length - 1 ? 0 : current + 1)
 	}
 
-	const prevReview = () => {
-		setCurrentReviewIndex((prevIndex) =>
-			prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
-		)
+	const prevSlide = () => {
+		setCurrent(current === 0 ? length - 1 : current - 1)
+	}
+
+	const openModal = (index) => {
+		setCurrent(index)
+		setIsOpen(true)
+	}
+
+	const closeModal = () => {
+		setIsOpen(false)
+	}
+
+	if (!Array.isArray(slides) || slides.length <= 0) {
+		return null
 	}
 
 	return (
-		<div className="relative w-full mx-auto" style={{ width: "calc(75vw)" }}>
-			<div className="relative">
-				<button
-					className="absolute top-1/2 -left-8 transform -translate-y-1/2 px-3 py-2 bg-gray-800 text-white rounded-xl"
-					onClick={prevReview}
-				>
-					&larr;
-				</button>
-				<button
-					className="absolute top-1/2 -right-8 transform -translate-y-1/2 px-3 py-2 bg-gray-800 text-white rounded-xl"
-					onClick={nextReview}
-				>
-					&rarr;
-				</button>
-				<div className="p-8 bg-gray-100 rounded-md">
-					<p className="text-2xl font-bold py-8">
-						{reviews[currentReviewIndex].author}
-					</p>
-					<p className="text-gray-800 text-xl font-semibold">
-						{reviews[currentReviewIndex].content}
-					</p>
-				</div>
+		<div id="gallery" className="max-w-[820px] mx-auto">
+			<div className="relative flex justify-center p-4 ">
+				{slides.map((slide, index) => (
+					<div
+						key={index}
+						className={
+							index === current
+								? "opacity-[1] ease-in duration-1000"
+								: "opacity-0"
+						}
+					>
+						<FaArrowCircleLeft
+							onClick={prevSlide}
+							className="absolute top-[50%] left-[20px] text-gray-700 cursor-pointer select-none z-[2]"
+							size={50}
+						/>
+						{index === current && (
+							<Image
+								src={slide.src}
+								alt="/"
+								width={820}
+								height={720}
+								objectFit="cover"
+								onClick={() => openModal(index)}
+								className="cursor-pointer rounded-2xl"
+							/>
+						)}
+						<FaArrowCircleRight
+							onClick={nextSlide}
+							className="absolute top-[50%] right-[20px] text-gray-700 cursor-pointer select-none z-[2]"
+							size={50}
+						/>
+					</div>
+				))}
 			</div>
+
+			{/* Modal */}
+			{isOpen && (
+				<div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-75">
+					<div className="relative p-4">
+						<FaTimes
+							onClick={closeModal}
+							className="absolute top-2 right-2 text-white text-3xl cursor-pointer z-50"
+						/>
+						<Image
+							src={slides[current].src}
+							alt="/"
+							width={1024}
+							height={768}
+							objectFit="contain"
+							className="rounded-lg"
+						/>
+						<FaArrowCircleLeft
+							onClick={prevSlide}
+							className="absolute top-[50%] left-[10px] text-white cursor-pointer select-none z-[2]"
+							size={50}
+						/>
+						<FaArrowCircleRight
+							onClick={nextSlide}
+							className="absolute top-[50%] right-[10px] text-white cursor-pointer select-none z-[2]"
+							size={50}
+						/>
+					</div>
+				</div>
+			)}
 		</div>
 	)
 }
-
 export default ReviewSlider
