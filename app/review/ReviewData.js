@@ -5,9 +5,6 @@ export const ReviewData = [
 		src: "https://i.imgur.com/CLlWB3G.jpg",
 	},
 	{
-		src: "https://i.imgur.com/fRNju6y.jpg",
-	},
-	{
 		src: "https://i.imgur.com/IlPdMuH.jpg",
 	},
 	{

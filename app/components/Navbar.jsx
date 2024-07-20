@@ -37,6 +37,17 @@ const Navbar = () => {
 		}
 		window.addEventListener("scroll", changeLogo)
 	}, [])
+
+	useEffect(() => {
+		const preloadImages = [
+			"https://i.imgur.com/wpOiZuv.png",
+			"https://i.imgur.com/5KLaQs7.png",
+			"https://i.imgur.com/Vsa5aui.png",
+		]
+		preloadImages.forEach((image) => {
+			new Image().src = image
+		})
+	}, [])
 	return (
 		<div
 			style={{ backgroundColor: `${color}` }}
