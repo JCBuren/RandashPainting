@@ -8,7 +8,7 @@ const Navbar = () => {
 	const [nav, setNav] = useState(false)
 	const [color, setColor] = useState("transparent")
 	const [textColor, setTextColor] = useState("white")
-	const [logoImage, setLogoImage] = useState("https://i.imgur.com/wpOiZuv.png")
+	const [logoImage, setLogoImage] = useState("https://i.imgur.com/py5rXTu.png")
 
 	const handleNav = () => {
 		setNav(!nav)
@@ -32,7 +32,7 @@ const Navbar = () => {
 			if (window.scrollY >= 90) {
 				setLogoImage("https://i.imgur.com/5KLaQs7.png")
 			} else {
-				setLogoImage("https://i.imgur.com/Vsa5aui.png")
+				setLogoImage("https://i.imgur.com/py5rXTu.png")
 			}
 		}
 		window.addEventListener("scroll", changeLogo)
