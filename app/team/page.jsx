@@ -24,7 +24,7 @@ export default function Team() {
 			</div>
 			<div className="grid grid-flow-row justify-items-center gap-12 bg-[#F2F3F1]">
 				<Image
-					src="https://i.imgur.com/jbqBfcG.jpg"
+					src="https://i.imgur.com/LZRhqlr.png"
 					alt="/"
 					width={980}
 					height={620}
